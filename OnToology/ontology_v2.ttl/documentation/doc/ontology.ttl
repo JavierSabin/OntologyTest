@@ -1,0 +1,150 @@
+@prefix : <http://smartcity.linkeddata.es/transport/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://smartcity.linkeddata.es/transport/> .
+
+<http://smartcity.linkeddata.es/transport/> rdf:type owl:Ontology ;
+                                             <http://purl.org/dc/elements/1.1/creator> "Group02-SemanticWeb-2022/2023" ;
+                                             <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" ;
+                                             <http://purl.org/dc/elements/1.1/title> "EcoMobility" ;
+                                             owl:versionInfo "0.1.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://smartcity.linkeddata.es/transport/ontology/hasAddress
+<http://smartcity.linkeddata.es/transport/ontology/hasAddress> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                               rdfs:range <http://smartcity.linkeddata.es/transport/ontology/Address> ;
+                                                               rdfs:label "has address" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/hasDistrict
+<http://smartcity.linkeddata.es/transport/ontology/hasDistrict> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <http://smartcity.linkeddata.es/transport/ontology/Neighbourhood> ;
+                                                                rdfs:range <http://smartcity.linkeddata.es/transport/ontology/District> ;
+                                                                rdfs:label "has district" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/hasLocation
+<http://smartcity.linkeddata.es/transport/ontology/hasLocation> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                                rdfs:range <http://smartcity.linkeddata.es/transport/ontology/Location> ;
+                                                                rdfs:label "has location" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/hasNeighbourhood
+<http://smartcity.linkeddata.es/transport/ontology/hasNeighbourhood> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                                     rdfs:range <http://smartcity.linkeddata.es/transport/ontology/Neighbourhood> ;
+                                                                     rdfs:label "has neighbourhood" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/hasOperator
+<http://smartcity.linkeddata.es/transport/ontology/hasOperator> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/EVChargingStation> ;
+                                                                rdfs:range <http://smartcity.linkeddata.es/transport/ontology/Operator> ;
+                                                                rdfs:label "has operator" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://smartcity.linkeddata.es/transport/ontology/ad_name
+<http://smartcity.linkeddata.es/transport/ontology/ad_name> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:label "ad_name" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/ad_number
+<http://smartcity.linkeddata.es/transport/ontology/ad_number> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:label "ad_number" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/capacity
+<http://smartcity.linkeddata.es/transport/ontology/capacity> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:range xsd:integer ;
+                                                             rdfs:label "capacity" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/name_id
+<http://smartcity.linkeddata.es/transport/ontology/name_id> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:label "name_id" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/number_id
+<http://smartcity.linkeddata.es/transport/ontology/number_id> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:range xsd:integer ;
+                                                              rdfs:label "number_id" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://smartcity.linkeddata.es/transport/ontology/Address
+<http://smartcity.linkeddata.es/transport/ontology/Address> rdf:type owl:Class ;
+                                                            rdfs:label "Address" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/District
+<http://smartcity.linkeddata.es/transport/ontology/District> rdf:type owl:Class ;
+                                                             rdfs:label "District" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/Location
+<http://smartcity.linkeddata.es/transport/ontology/Location> rdf:type owl:Class ;
+                                                             rdfs:label "Location" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/Neighbourhood
+<http://smartcity.linkeddata.es/transport/ontology/Neighbourhood> rdf:type owl:Class ;
+                                                                  rdfs:label "Neighbourhood" .
+
+
+###  http://smartcity.linkeddata.es/transport/ontology/Operator
+<http://smartcity.linkeddata.es/transport/ontology/Operator> rdf:type owl:Class ;
+                                                             rdfs:label "Operator" .
+
+
+###  http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta
+<http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                                                      rdfs:label "Estacion Bicicleta" .
+
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               rdfs:label "Feature" .
+
+
+###  https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/EVChargingStation
+<https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/EVChargingStation> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
+                                                                                                               rdfs:label "E V Charging Station" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

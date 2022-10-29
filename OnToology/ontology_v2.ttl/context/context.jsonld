@@ -1,0 +1,83 @@
+{
+  "@context" : {
+    "Neighbourhood" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/Neighbourhood"
+    },
+    "Address" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/Address"
+    },
+    "number_id" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/number_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "hasDistrict" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/hasDistrict",
+      "@type" : "@id"
+    },
+    "ad_name" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/ad_name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "District" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/District"
+    },
+    "hasAddress" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/hasAddress",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Location" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/Location"
+    },
+    "hasOperator" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/hasOperator",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "EVChargingStation" : {
+      "@id" : "https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/EVChargingStation"
+    },
+    "name_id" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/name_id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasNeighbourhood" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/hasNeighbourhood",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Operator" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/Operator"
+    },
+    "EstacionBicicleta" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta"
+    },
+    "ad_number" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/ad_number",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "capacity" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/capacity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasLocation" : {
+      "@id" : "http://smartcity.linkeddata.es/transport/ontology/hasLocation",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    }
+  }
+}

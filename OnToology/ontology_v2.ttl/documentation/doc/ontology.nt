@@ -1,0 +1,140 @@
+<http://smartcity.linkeddata.es/transport/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://smartcity.linkeddata.es/transport/> <http://purl.org/dc/elements/1.1/creator> "Group02-SemanticWeb-2022/2023" .
+<http://smartcity.linkeddata.es/transport/> <http://purl.org/dc/elements/1.1/description> "Ontology code created by Chowlk" .
+<http://smartcity.linkeddata.es/transport/> <http://purl.org/dc/elements/1.1/title> "EcoMobility" .
+<http://smartcity.linkeddata.es/transport/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://smartcity.linkeddata.es/transport/ontology/hasAddress
+<http://smartcity.linkeddata.es/transport/ontology/hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://smartcity.linkeddata.es/transport/ontology/hasAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://smartcity.linkeddata.es/transport/ontology/hasAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://smartcity.linkeddata.es/transport/ontology/Address> .
+<http://smartcity.linkeddata.es/transport/ontology/hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has address" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/hasDistrict
+<http://smartcity.linkeddata.es/transport/ontology/hasDistrict> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://smartcity.linkeddata.es/transport/ontology/hasDistrict> <http://www.w3.org/2000/01/rdf-schema#domain> <http://smartcity.linkeddata.es/transport/ontology/Neighbourhood> .
+<http://smartcity.linkeddata.es/transport/ontology/hasDistrict> <http://www.w3.org/2000/01/rdf-schema#range> <http://smartcity.linkeddata.es/transport/ontology/District> .
+<http://smartcity.linkeddata.es/transport/ontology/hasDistrict> <http://www.w3.org/2000/01/rdf-schema#label> "has district" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/hasLocation
+<http://smartcity.linkeddata.es/transport/ontology/hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://smartcity.linkeddata.es/transport/ontology/hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://smartcity.linkeddata.es/transport/ontology/hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://smartcity.linkeddata.es/transport/ontology/Location> .
+<http://smartcity.linkeddata.es/transport/ontology/hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/hasNeighbourhood
+<http://smartcity.linkeddata.es/transport/ontology/hasNeighbourhood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://smartcity.linkeddata.es/transport/ontology/hasNeighbourhood> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://smartcity.linkeddata.es/transport/ontology/hasNeighbourhood> <http://www.w3.org/2000/01/rdf-schema#range> <http://smartcity.linkeddata.es/transport/ontology/Neighbourhood> .
+<http://smartcity.linkeddata.es/transport/ontology/hasNeighbourhood> <http://www.w3.org/2000/01/rdf-schema#label> "has neighbourhood" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/hasOperator
+<http://smartcity.linkeddata.es/transport/ontology/hasOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://smartcity.linkeddata.es/transport/ontology/hasOperator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/EVChargingStation> .
+<http://smartcity.linkeddata.es/transport/ontology/hasOperator> <http://www.w3.org/2000/01/rdf-schema#range> <http://smartcity.linkeddata.es/transport/ontology/Operator> .
+<http://smartcity.linkeddata.es/transport/ontology/hasOperator> <http://www.w3.org/2000/01/rdf-schema#label> "has operator" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://smartcity.linkeddata.es/transport/ontology/ad_name
+<http://smartcity.linkeddata.es/transport/ontology/ad_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://smartcity.linkeddata.es/transport/ontology/ad_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://smartcity.linkeddata.es/transport/ontology/ad_name> <http://www.w3.org/2000/01/rdf-schema#label> "ad_name" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/ad_number
+<http://smartcity.linkeddata.es/transport/ontology/ad_number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://smartcity.linkeddata.es/transport/ontology/ad_number> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://smartcity.linkeddata.es/transport/ontology/ad_number> <http://www.w3.org/2000/01/rdf-schema#label> "ad_number" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/capacity
+<http://smartcity.linkeddata.es/transport/ontology/capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://smartcity.linkeddata.es/transport/ontology/capacity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://smartcity.linkeddata.es/transport/ontology/capacity> <http://www.w3.org/2000/01/rdf-schema#label> "capacity" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/name_id
+<http://smartcity.linkeddata.es/transport/ontology/name_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://smartcity.linkeddata.es/transport/ontology/name_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://smartcity.linkeddata.es/transport/ontology/name_id> <http://www.w3.org/2000/01/rdf-schema#label> "name_id" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/number_id
+<http://smartcity.linkeddata.es/transport/ontology/number_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://smartcity.linkeddata.es/transport/ontology/number_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://smartcity.linkeddata.es/transport/ontology/number_id> <http://www.w3.org/2000/01/rdf-schema#label> "number_id" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://smartcity.linkeddata.es/transport/ontology/Address
+<http://smartcity.linkeddata.es/transport/ontology/Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://smartcity.linkeddata.es/transport/ontology/Address> <http://www.w3.org/2000/01/rdf-schema#label> "Address" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/District
+<http://smartcity.linkeddata.es/transport/ontology/District> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://smartcity.linkeddata.es/transport/ontology/District> <http://www.w3.org/2000/01/rdf-schema#label> "District" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/Location
+<http://smartcity.linkeddata.es/transport/ontology/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://smartcity.linkeddata.es/transport/ontology/Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/Neighbourhood
+<http://smartcity.linkeddata.es/transport/ontology/Neighbourhood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://smartcity.linkeddata.es/transport/ontology/Neighbourhood> <http://www.w3.org/2000/01/rdf-schema#label> "Neighbourhood" .
+# 
+# http://smartcity.linkeddata.es/transport/ontology/Operator
+<http://smartcity.linkeddata.es/transport/ontology/Operator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://smartcity.linkeddata.es/transport/ontology/Operator> <http://www.w3.org/2000/01/rdf-schema#label> "Operator" .
+# 
+# http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta
+<http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta> <http://www.w3.org/2000/01/rdf-schema#label> "Estacion Bicicleta" .
+# 
+# http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature" .
+# 
+# https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/EVChargingStation
+<https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/EVChargingStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/EVChargingStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/model.yaml#/EVChargingStation> <http://www.w3.org/2000/01/rdf-schema#label> "E V Charging Station" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
